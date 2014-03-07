@@ -8,13 +8,14 @@ CE3_Her
 •	When the elevator is at the top floor, it will stay there until Up_Down goes inactive while Stop is inactive.  Likewise, it will remain at the bottom until told to go up and Stop is inactive.  
 •	The system should output the floor it is on (1 – 4) as a four-bit binary number.
 
-
-##Moore Elevator Controller:
 ===================================
+##Moore Elevator Controller:
+
 
 ![alt text](https://github.com/vipersfly23/Lab1_HH/blob/master/Sim_Screen_Shot.GIF?raw=true "simulation result")
 
-
+##  Explanation:
+  I believe my design is functional based on my simulation because the elevator only moves when up_down = 1, and stop is inactive. It also meets the requirement of  stopping at least 2 clk period on each level. Whenever stop is active, the elevator stops on that floor until stop is inactive, up_down active again. once the elevator hits the fourth floor as displayed in the simulation diagram, the simulation stops on the four floor for at least two clock cycles then moves down to the first floor, floor by floor when both stop and up_down is inactive.
 
 
 Schematics:
