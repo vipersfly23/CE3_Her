@@ -18,6 +18,7 @@ CE3_Her
   I believe my design is functional based on my simulation because the elevator only moves when up_down = 1, and stop is inactive. It also meets the requirement of  stopping at least 2 clk period on each level. Whenever stop is active, the elevator stops on that floor until stop is inactive, up_down active again. once the elevator hits the fourth floor as displayed in the simulation diagram, the simulation stops on the four floor for at least two clock cycles then moves down to the first floor, floor by floor when both stop and up_down is inactive.
   
   [Moore Module](https://github.com/vipersfly23/CE3_Her/blob/master/MooreElevatorController_Shell.vhd)
+  
   [Moore TestBench](https://github.com/vipersfly23/CE3_Her/blob/master/MooreElevatorTB.vhd_)
 
   
@@ -31,13 +32,14 @@ CE3_Her
 
 ## Answers: 
 *Question: Will it be different from your Moore Machine?*
-The only difference between the mealy machine and the moore machine is that the mealy machine takes in the input, and outputs the next move based on the inputs, while the moore just takes in the input and performs the task.
+The only difference between the mealy machine and the moore machine is that the mealy machine takes in the input, and outputs the next move, and the current move based on the inputs, while the moore just takes in the input and performs the task, and outputs the current move.
 
 ##  Explanation:
 
   I believe this is correct because it does exactly as expected with the exception of the unreliability of the mealy machine. Since it has to remember the next state in-between cycles when the stop goes from active to inactive and the floor has not changed, the mealy system auto assumes next floor is 1, until the next floor is approached. I believe this is a flaw in the mealy machine and not my implementation. The jump can be observed by the yellow line.
   
   [Mealy Module](https://github.com/vipersfly23/CE3_Her/blob/master/MealyElevatorController_Shell.vhd)
+  
   [Mealy TestBench](https://github.com/vipersfly23/CE3_Her/blob/master/Mealy_testbench_Her.vhd)
 
 
