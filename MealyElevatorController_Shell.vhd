@@ -1,14 +1,15 @@
 ----------------------------------------------------------------------------------
 -- Company: USAFA/DFEC
--- Engineer: Silva
+-- Engineer: Hunter Her
 -- 
 -- Create Date:    10:33:47 07/07/2012 
--- Design Name: 
--- Module Name:    MooreElevatorController_Silva - Behavioral 
--- Project Name: 
+-- Design Name: MealyElevatorController
+-- Module Name:    MooreElevatorController_Her - Behavioral 
+-- Project Name: Mealy Machine
 -- Target Devices: 
 -- Tool versions: 
--- Description: 
+-- Description: This module is to simulate a mealy machine on an elevator controller
+-- Documentation: No help received.
 --
 -- Dependencies: 
 --
@@ -53,7 +54,7 @@ begin
 floor_state_machine: process(clk)
 begin
 --Insert your state machine below:
-if clk'event and clk='1' then
+if clk'event and clk='1'  then
 		--reset is active high and will return the elevator to floor1
 		--Question: is reset synchronous or asynchronous?
 		if reset='1' then

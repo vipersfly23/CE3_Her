@@ -1,11 +1,12 @@
 ----------------------------------------------------------------------------------
 -- Company: USAFA/DFEC
--- Engineer: Silva
+-- Engineer: Hunter Her
 -- 
 -- Create Date:    	10:33:47 07/07/2012 
--- Design Name:		CE3
+-- Design Name:		CE3_Moore_Machine
 -- Module Name:    	MooreElevatorController_Shell - Behavioral 
--- Description: 		Shell for completing CE3
+-- Description: 		Moore machine as an elevator controller.
+-- Documentation: No help received.
 --
 ----------------------------------------------------------------------------------
 library IEEE;
@@ -22,10 +23,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity MooreElevatorController_Shell is
     Port ( clk : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
+      
            stop : in  STD_LOGIC;
+			  reset : in  STD_LOGIC;
            up_down : in  STD_LOGIC;
-           floor : out  STD_LOGIC_VECTOR (3 downto 0));
+           floor : out   STD_LOGIC_VECTOR (3 downto 0));
 end MooreElevatorController_Shell;
 
 architecture Behavioral of MooreElevatorController_Shell is

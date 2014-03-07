@@ -1,14 +1,14 @@
 --------------------------------------------------------------------------------
--- Company: 
--- Engineer:
+-- Company: USAFA/DFEC
+-- Engineer: Hunter Her
 --
 -- Create Date:   20:35:03 03/06/2014
--- Design Name:   
+-- Design Name:   Mealy_TestBench
 -- Module Name:   C:/Users/C16Hunter.Her/Desktop/Academic_Spring_2014/ECE_281/CE3_Her/Mealy_testbench_Her.vhd
 -- Project Name:  CE3_Her
 -- Target Device:  
 -- Tool versions:  
--- Description:   
+-- Description:   This testbench is used to test the mealy machine elevator controller
 -- 
 -- VHDL Test Bench Created by ISE for module: MealyElevatorController_Shell
 -- 
@@ -41,7 +41,7 @@ ARCHITECTURE behavior OF Mealy_testbench_Her IS
  
     COMPONENT MealyElevatorController_Shell
     PORT(
-         clk : IN  std_logic;
+         clk : IN   std_logic;
          reset : IN  std_logic;
          stop : IN  std_logic;
          up_down : IN  std_logic;
