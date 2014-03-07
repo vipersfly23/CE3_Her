@@ -131,7 +131,7 @@ nextfloor <= 	"0001" when ( floor_state= floor1 and stop = '1') else
 				"0010" when ( floor_state= floor2 and stop = '1') else
 				"0011" when ( floor_state= floor2 and stop = '0' and up_down = '1') else
 				"0011" when ( floor_state= floor3 and stop = '1') else
-				"0100" when ( floor_state= floor4 and stop = '0' and up_down = '1') else
+				"0100" when ( floor_state= floor3 and stop = '0' and up_down = '1') else
 				"0100" when ( floor_state= floor4 and stop = '1') else
 				"0100" when ( floor_state= floor4 and stop = '0' and up_down = '1') else
 				"0011" when (floor_state = floor4 and stop = '0' and up_down = '0') else
