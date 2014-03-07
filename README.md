@@ -36,7 +36,7 @@ The only difference between the mealy machine and the moore machine is that the 
 
 ##  Explanation:
 
-  I believe this is correct because it does exactly as expected with the exception of the unreliability of the mealy machine. Since it has to remember the next state in-between cycles when the stop goes from active to inactive and the floor has not changed, the mealy system auto assumes next floor is 1, until the next floor is approached. I believe this is a flaw in the mealy machine and not my implementation. The jump can be observed by the yellow line. Other then the nextFloor not always being accurate, the performance of the elevator works great, it jumps floor to floor stoppig for at least 2 time period before moving to the next floor. It also comes down similar to the moor machine, functionality is as explained in the moore machine with the exception of the output nextFloor.
+  I believe this is correct because it functions similararly to the Moore Machine as explained earlier, when up_down is active and stop isn't it continues to move up, when stop is active it stops on that floor, and whenever both switches are inactive it goes back down. The addition to this is the nextFloor output which outputs the next floor the elevator will go to depending on the input. For example, if stop is inputed, the next floor output would indicate that the next floor is the same floor, because the floor wouldn't change at the next clock cycle. if Up_down is active and stop isn't, and the current floor is 2, the next floor would indicate that the next floor is 3, which is correct. This works as you can see in the simulation result. 
   
   [Mealy Module](https://github.com/vipersfly23/CE3_Her/blob/master/MealyElevatorController_Shell.vhd)
   
