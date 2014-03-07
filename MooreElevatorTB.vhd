@@ -1,14 +1,14 @@
 --------------------------------------------------------------------------------
--- Company: 
--- Engineer:
+-- Company: USAFA/DFEC
+-- Engineer: Hunter Her
 --
 -- Create Date:   19:05:43 03/05/2014
--- Design Name:   
+-- Design Name:   Moore_TestBench
 -- Module Name:   C:/Users/C16Hunter.Her/Desktop/Academic_Spring_2014/ECE_281/CE3_Her/MooreElevatorTB.vhd
 -- Project Name:  CE3_Her
 -- Target Device:  
 -- Tool versions:  
--- Description:   
+-- Description:   This testbench is to test the moore machine elevator controller.
 -- 
 -- VHDL Test Bench Created by ISE for module: MooreElevatorController_Shell
 -- 
@@ -41,7 +41,7 @@ ARCHITECTURE behavior OF MooreElevatorTB IS
  
     COMPONENT MooreElevatorController_Shell
     PORT(
-         clk : IN  std_logic;
+         clk :  IN  std_logic;
          reset : IN  std_logic;
          stop : IN  std_logic;
          up_down : IN  std_logic;
