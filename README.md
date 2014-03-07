@@ -19,7 +19,7 @@ CE3_Her
   
   [Moore Module](https://github.com/vipersfly23/CE3_Her/blob/master/MooreElevatorController_Shell.vhd)
   
-  [Moore TestBench](https://github.com/vipersfly23/CE3_Her/blob/master/MooreElevatorTB.vhd_)
+  [Moore TestBench](https://github.com/vipersfly23/CE3_Her/blob/master/MooreElevatorTB.vhd)
 
   
   
